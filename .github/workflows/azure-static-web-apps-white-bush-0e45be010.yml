@@ -33,11 +33,15 @@ jobs:
           python manage.py makemigrations
           python manage.py migrate
 
+      - name: Fazer login no Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Fazer Deploy no Azure App Service
         uses: azure/webapps-deploy@v2
         with:
           app-name: "SEU_NOME_DO_BACKEND_NO_AZURE"
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: EPTALAUNCHSERVER/backend
 
   deploy_frontend:
