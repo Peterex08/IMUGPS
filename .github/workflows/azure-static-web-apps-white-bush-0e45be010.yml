@@ -1,46 +1,73 @@
-name: Azure Static Web Apps CI/CD
+name: Deploy Backend e Frontend no Azure
 
 on:
   push:
     branches:
       - serveronly
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - serveronly
 
 jobs:
-  build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  deploy_backend:
     runs-on: ubuntu-latest
-    name: Build and Deploy Job
+    name: Deploy Backend (Django)
+    
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
-          lfs: false
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WHITE_BUSH_0E45BE010 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "./EPTALAUNCHSERVER" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "build" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar dependências do backend
+        run: |
+          cd EPTALAUNCHSERVER/backend
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: Aplicar migrações do Django
+        run: |
+          cd EPTALAUNCHSERVER/backend
+          source venv/bin/activate
+          python manage.py makemigrations
+          python manage.py migrate
+
+      - name: Fazer Deploy no Azure App Service
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: "SEU_NOME_DO_BACKEND_NO_AZURE"
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: EPTALAUNCHSERVER/backend
+
+  deploy_frontend:
     runs-on: ubuntu-latest
-    name: Close Pull Request Job
+    name: Deploy Frontend (React/Vue/etc)
+    
     steps:
-      - name: Close Pull Request
-        id: closepullrequest
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências do frontend
+        run: |
+          cd EPTALAUNCHSERVER/frontend
+          npm install
+
+      - name: Construir o frontend
+        run: |
+          cd EPTALAUNCHSERVER/frontend
+          npm run build
+
+      - name: Fazer Deploy no Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WHITE_BUSH_0E45BE010 }}
-          action: "close"
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "EPTALAUNCHSERVER/frontend"
+          output_location: "EPTALAUNCHSERVER/frontend/dist"
