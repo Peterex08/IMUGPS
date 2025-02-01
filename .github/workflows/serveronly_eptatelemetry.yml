@@ -36,7 +36,6 @@ jobs:
         run: |
           source venv/bin/activate
           cd EPTALAUNCHSERVER/backend
-          export DJANGO_SETTINGS_MODULE=eptatelemetry.settings
           python manage.py makemigrations
           python manage.py migrate
 
