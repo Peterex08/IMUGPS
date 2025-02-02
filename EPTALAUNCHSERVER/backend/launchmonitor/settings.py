@@ -30,7 +30,12 @@ SECRET_KEY = 'django-insecure-%m=7p+x0&hj5$9aya1hg@3nz-%7e2zx$36vqa&4r_$zxxiivfb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 ALLOWED_HOSTS = ['*']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -76,7 +81,7 @@ ROOT_URLCONF = 'launchmonitor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR.joinpath('frontend')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -164,3 +169,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
+
+STATICFILES_DIRS = [BASE_DIR.joinpath('frontend','dist')]

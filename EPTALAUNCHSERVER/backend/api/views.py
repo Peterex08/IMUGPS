@@ -8,3 +8,6 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
+
+def index(request):
+    return render(request, 'dist/index.html')
