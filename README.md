@@ -5,11 +5,11 @@ A project that uses data from IMU, GPS and Barometer modules to estimate positio
 To use the application you will need multiple stuff, including from android apps to c++, python and javascript libs.
 
  1. Download **SensorServer** in your phone to stream IMU and GPS data for Extended Kalman FIlter Analysis.
-	 **NOTE:** Your cellphone plays the role for a rocket, in this case, substitutes a TAU 1201 GPS Module and a MPU 				9250 IMU. It does not work properly for the filtering conditions, but can be used to test all the process.
+    **NOTE:** Your cellphone plays the role for a rocket, in this case, substitutes a TAU 1201 GPS Module and a MPU 9250 IMU. It does not work properly for the filtering conditions, but can be used to test all the process.
 	 [umer0586 - SensorServer (Github Repo)](https://github.com/umer0586/SensorServer)
 	 
- 2. Download all Cpp libraries:
- **Threads**:`sudo apt-get install libpthread-stubs0-dev`
+ 3. Download all Cpp libraries:
+**Threads**:`sudo apt-get install libpthread-stubs0-dev`
 **OpenSSL**:`sudo apt-get install libssl-dev`
 **Boost**:`sudo apt-get install libboost-system-dev`
 **Eigen3**:`sudo apt-get install libeigen3-dev`
@@ -18,10 +18,10 @@ To use the application you will need multiple stuff, including from android apps
 **Compiler C++**:`sudo apt-get install g++`
 The projects also needs **nlohmann/json** and **WebSocket++** libraries, but they were configured to be downloaded during the execution of cmake.
 
- 3. Download [NodeJS](https://nodejs.org/) to run frontend application based on React + Vite
+ 5. Download [NodeJS](https://nodejs.org/) to run frontend application based on React + Vite
 	 Then, go to EPTALAUNCHSERVER/frontend and run `npm install`, this will install everything inside package.json, making the frontend capable of running everything.
 	
- 4. Python needs to be installed as well to run all backend user management using Django, so run `sudo apt install python3` and `sudo apt install python3-pip` to make sure pip is installed.
+ 6. Python needs to be installed as well to run all backend user management using Django, so run `sudo apt install python3` and `sudo apt install python3-pip` to make sure pip is installed.
 	 Then go to EPTALAUNCHSERVER/backend and run `pip install -r requirements.txt` to install all python libs.
 
 ## How to use it?
