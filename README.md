@@ -34,6 +34,10 @@ The projects also needs **nlohmann/json** and **WebSocket++** libraries, but the
  6. In **terminal THREE**, go to EPTALAUNCHSERVER/frontend and run `npm run dev`, this will prompt a local URL, you can click it to go to the website responsible to show the "rocket" data streaming.
  7. Finally, to start streaming the data from your phone, go to **terminal ONE** and run `./sensor_monitoring`
  
- You should see the screen of the app being populated with the data streamed from the cellphone.
+ You should see the screen of the app being populated with the data streamed from the cellphone. It should look like that:
+![login](https://github.com/user-attachments/assets/6062f6f5-a925-4231-8431-43bcf62d43a7)
+![main](https://github.com/user-attachments/assets/852eb18f-2b5c-446e-ad89-275e6968216d)
 
- 
+ ## Disclaimer
+Using the cellphone to simulate the data streaming from a TAU 1201 and a MPU 9250 module didn't result in good results. The GPS from the phone has a ridiculous refresh rate [0.3 Hz], compared to TAU 1201 that is at least 5 Hz, it is a massive difference. 
+This low performance on gps leads to significantly bad results on Space State Estimator to create a route path!
