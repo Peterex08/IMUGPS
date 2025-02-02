@@ -1,4 +1,4 @@
-# Install script for directory: /home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp
+# Install script for directory: /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -51,6 +51,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/" TYPE DIRECTORY FILES "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/websocketpp" FILES_MATCHING REGEX "/[^/]*\\.hpp[^/]*$")
+  file(INSTALL DESTINATION "/usr/local/include/" TYPE DIRECTORY FILES "/home/manga/Documents/IMUGPS/IMUGPSBAR/websocketpp" FILES_MATCHING REGEX "/[^/]*\\.hpp[^/]*$")
 endif()
 

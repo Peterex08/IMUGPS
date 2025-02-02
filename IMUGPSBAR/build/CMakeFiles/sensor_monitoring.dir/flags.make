@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK
 
-CXX_INCLUDES = -I/usr/local/include/eigen3 -I"/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/include" -I"/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/websocketpp-src" -I"/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-src/include"
+CXX_INCLUDES = -I/usr/local/include/eigen3 -I/home/manga/Documents/IMUGPS/IMUGPSBAR/include -I/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src -I/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic -std=gnu++17
 

@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(websocketpp-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/zaphoyd/websocketpp.git" "GIT_TAG" "0.8.2"
-                    SOURCE_DIR          "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/websocketpp-src"
-                    BINARY_DIR          "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/websocketpp-build"
+                    SOURCE_DIR          "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src"
+                    BINARY_DIR          "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

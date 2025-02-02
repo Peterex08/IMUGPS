@@ -1,11 +1,11 @@
 CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/src/main.cpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/config/asio_no_tls_client.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/config/core_client.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/platforms.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/cpp11.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/stdint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/config/asio_no_tls_client.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/config/core_client.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/platforms.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/cpp11.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/stdint.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -21,8 +21,8 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/concurrency/basic.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/thread.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/concurrency/basic.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/thread.hpp \
  /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -156,9 +156,9 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/ext/concurrence.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/endpoint.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/base/endpoint.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/functional.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/endpoint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/base/endpoint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/functional.hpp \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
@@ -174,11 +174,11 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/system_error.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/connection.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/base.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/connection_hdl.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/memory.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/system_error.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/connection.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/iostream/base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/connection_hdl.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/memory.hpp \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -188,9 +188,9 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/base/connection.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/uri.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/error.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/base/connection.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/uri.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/error.hpp \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
@@ -209,14 +209,14 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/logger/levels.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/logger/levels.hpp \
  /usr/include/c++/11/iostream \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/request.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/parser.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/request.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/parser.hpp \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/utilities.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/utilities.hpp \
  /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -224,15 +224,15 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/utilities_impl.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/constants.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/parser.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/request.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/response.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/response.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/message_buffer/message.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/frame.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/network.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/utilities_impl.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/constants.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/parser.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/request.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/response.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/http/impl/response.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/message_buffer/message.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/frame.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/network.hpp \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -250,12 +250,12 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/message_buffer/alloc.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/logger/basic.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/time.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/message_buffer/alloc.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/logger/basic.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/time.hpp \
  /usr/include/c++/11/iomanip /usr/include/c++/11/bits/quoted_string.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/random/random_device.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/random.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/random/random_device.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/random.hpp \
  /usr/include/c++/11/random /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -283,14 +283,14 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/endpoint_base.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/connection_base.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/extensions/permessage_deflate/disabled.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/extensions/extension.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/endpoint.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/connection.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/base.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/asio.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/endpoint_base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/connection_base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/extensions/permessage_deflate/disabled.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/extensions/extension.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/endpoint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/connection.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/asio.hpp \
  /usr/include/boost/version.hpp /usr/include/boost/asio/steady_timer.hpp \
  /usr/include/boost/asio/detail/config.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -819,7 +819,7 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/boost/asio/detail/completion_handler.hpp \
  /usr/include/boost/asio/impl/io_context.ipp \
  /usr/include/boost/asio/wait_traits.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/chrono.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/chrono.hpp \
  /usr/include/boost/asio.hpp /usr/include/boost/asio/awaitable.hpp \
  /usr/include/boost/asio/basic_datagram_socket.hpp \
  /usr/include/boost/asio/basic_socket.hpp \
@@ -1171,34 +1171,34 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/boost/asio/windows/stream_handle.hpp \
  /usr/include/boost/asio/write_at.hpp \
  /usr/include/boost/asio/impl/write_at.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/type_traits.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/base64/base64.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/security/none.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/security/base.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/client.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/roles/client_endpoint.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/endpoint.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/connection.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/close.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/utf8_validator.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/processor.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/type_traits.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/base64/base64.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/security/none.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/transport/asio/security/base.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/client.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/roles/client_endpoint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/endpoint.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/connection.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/close.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/utf8_validator.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/processor.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/base.hpp \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_queue.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/connection_impl.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi00.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/md5.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi07.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi08.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi13.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/sha1/sha1.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/version.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/endpoint_impl.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/json.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/adl_serializer.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/abi_macros.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/from_json.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/connection_impl.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi00.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/common/md5.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi07.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi08.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/processors/hybi13.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/sha1/sha1.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/version.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/websocketpp-src/websocketpp/impl/endpoint_impl.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/json.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/adl_serializer.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/abi_macros.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/from_json.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/valarray \
  /usr/include/c++/11/bits/valarray_array.h \
@@ -1210,47 +1210,47 @@ CMakeFiles/sensor_monitoring.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/gslice_array.h \
  /usr/include/c++/11/bits/mask_array.h \
  /usr/include/c++/11/bits/indirect_array.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/exceptions.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/value_t.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/macro_scope.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/detected.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/void_t.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/string_escape.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/position_t.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/cpp_future.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/type_traits.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iterator_traits.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/call_std/begin.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/call_std/end.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/json_fwd.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/string_concat.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/identity_tag.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/std_fs.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/exceptions.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/value_t.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/macro_scope.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/detected.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/void_t.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/string_escape.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/position_t.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/cpp_future.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/type_traits.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iterator_traits.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/call_std/begin.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/call_std/end.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/json_fwd.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/string_concat.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/identity_tag.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/std_fs.hpp \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/to_json.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/byte_container_with_subtype.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/hash.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/binary_reader.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/input_adapters.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/json_sax.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/lexer.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/is_sax.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/parser.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/internal_iterator.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iter_impl.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/json_pointer.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/json_ref.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/binary_writer.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/output_adapters.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/serializer.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/to_chars.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/ordered_map.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/macro_unscope.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/src/../include/payload_handler.h
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/to_json.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/byte_container_with_subtype.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/hash.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/binary_reader.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/input_adapters.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/json_sax.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/lexer.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/meta/is_sax.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/input/parser.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/internal_iterator.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/iter_impl.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/json_pointer.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/json_ref.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/binary_writer.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/output_adapters.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/output/serializer.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/conversions/to_chars.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/ordered_map.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/detail/macro_unscope.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/src/../include/payload_handler.h

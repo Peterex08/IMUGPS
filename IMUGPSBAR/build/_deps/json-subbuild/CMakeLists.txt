@@ -14,8 +14,8 @@ project(json-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(json-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/nlohmann/json/releases/download/v3.11.2/json.tar.xz"
-                    SOURCE_DIR          "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-src"
-                    BINARY_DIR          "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-build"
+                    SOURCE_DIR          "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src"
+                    BINARY_DIR          "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -15,7 +15,7 @@ using websocketpp::lib::placeholders::_1;
 using websocketpp::lib::placeholders::_2;
 using websocketpp::lib::bind;
 
-// C++ é genuinamente um inferno!
+// C++ is genuinely a hell
 const std::vector<std::string> types_order = {
     "android.sensor.accelerometer",
     "android.sensor.gyroscope",
@@ -103,6 +103,7 @@ void calc_vel(const std::vector<json>& arr) {
 
         payloadHandler(payload);
 
+        //deu bosta aqui, commentando pra não dar erro
         // std::cout << "payload = [";
         // for (size_t i = 0; i < payload.size(); ++i) {
         //     std::cout << payload[i];
@@ -165,6 +166,7 @@ void on_GPS(const json& values) {
 }
 
 // Sensor class implementation
+// Inherited structure from sensor webserver github
 Sensor::Sensor(const std::string& address, const std::string& sensor_type,
                std::function<void(const json&)> callback)
     : address_(address), sensor_type_(sensor_type), callback_(callback) {

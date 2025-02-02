@@ -1,4 +1,4 @@
-# Install script for directory: /home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-src
+# Install script for directory: /home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

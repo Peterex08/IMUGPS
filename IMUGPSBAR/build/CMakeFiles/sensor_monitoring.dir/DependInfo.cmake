@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/src/main.cpp" "CMakeFiles/sensor_monitoring.dir/src/main.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/main.cpp.o.d"
-  "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/src/payload_handler.cpp" "CMakeFiles/sensor_monitoring.dir/src/payload_handler.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/payload_handler.cpp.o.d"
-  "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/src/uNavINS.cpp" "CMakeFiles/sensor_monitoring.dir/src/uNavINS.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/uNavINS.cpp.o.d"
+  "/home/manga/Documents/IMUGPS/IMUGPSBAR/src/main.cpp" "CMakeFiles/sensor_monitoring.dir/src/main.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/main.cpp.o.d"
+  "/home/manga/Documents/IMUGPS/IMUGPSBAR/src/payload_handler.cpp" "CMakeFiles/sensor_monitoring.dir/src/payload_handler.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/payload_handler.cpp.o.d"
+  "/home/manga/Documents/IMUGPS/IMUGPSBAR/src/uNavINS.cpp" "CMakeFiles/sensor_monitoring.dir/src/uNavINS.cpp.o" "gcc" "CMakeFiles/sensor_monitoring.dir/src/uNavINS.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
-get_filename_component(directory "/home/manga/Documents/EPTA PROJECT/IMUGPSBAR/build/_deps/json-src" ABSOLUTE)
+get_filename_component(filename "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-subbuild/json-populate-prefix/src/json.tar.xz" ABSOLUTE)
+get_filename_component(directory "/home/manga/Documents/IMUGPS/IMUGPSBAR/build/_deps/json-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

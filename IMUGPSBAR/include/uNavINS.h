@@ -8,30 +8,15 @@ University of Minnesota
 Aerospace Engineering and Mechanics
 Copyright 2011 Regents of the University of Minnesota. All rights reserved.
 
-Updated to be a class, use Eigen, and compile as an Arduino library.
-Added methods to get gyro and accel bias. Added initialization to
-estimated angles rather than assuming IMU is level. Added method to get psi,
-rather than just heading, and ground track.
-Brian R Taylor
-brian.taylor@bolderflight.com
-2017-12-20
-Bolder Flight Systems
-Copyright 2017 Bolder Flight Systems
+Modified by:
+Pedro Henrique Afonso
+2025-01-29
+Federal University of Uberlândia
+Mechanical Engineering Department - FEMEC
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-and associated documentation files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Althered for more expressive vertical acceleration forces, up to 4G. 
+Granted compatibility with rocketry applications.
 
-The above copyright notice and this permission notice shall be included in all copies or
-substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
-BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 // XXX - accel and gyro bias not being updated.

@@ -3,11 +3,10 @@
 #include "../include/payload_handler.h"
 #include <vector>
 #include <nlohmann/json.hpp>
-
-#define PI 3.14159265358979323846
-
 #include <string>
 #include <mqtt/async_client.h>
+
+#define PI 3.14159265358979323846
 
 class MqttPublisher {
 private:
@@ -134,12 +133,77 @@ MqttPublisher* getPublisher() {
     if (!globalPublisher) {
         std::string server_address = "tcp://broker.hivemq.com:1883";
         std::string client_id = "cpp_publisher";
-        std::string topic = "epta_strean/payloadata223";
+        std::string topic = "epta_strean/payloadata223"; //era pra ser stream, mas com preguiça de rebuildar deixei strean
         
         globalPublisher = std::make_unique<MqttPublisher>(server_address, client_id, topic);
     }
     return globalPublisher.get();
 }
+
+enum EstadoFoguete {
+    PARADO = 0,
+    SUBIDA = 1,
+    APOGEU = 2,
+    QUEDA_LIVRE = 3,
+    ACIONA_PARAQUEDAS = 4,
+    DESCIDA_SEGURA = 5
+};
+
+class ControleParaquedas {
+private:
+    EstadoFoguete estado;
+    double alturaAnterior;
+    double tempoNoApogeu;
+    double ultimoTimestamp;
+    const double LIMITE_VELOCIDADE_DESCIDA = -2.0;
+    const double ALTURA_ABERTURA_PARAQUEDAS = 1000;
+    const double TEMPO_MIN_APOGEU = 0.3;
+    const double PRESSAO_ABERTURA_PARAQUEDAS = 900;
+
+public:
+    ControleParaquedas() : estado(SUBIDA), alturaAnterior(0), tempoNoApogeu(0), ultimoTimestamp(0) {}
+
+    int atualizar(double altura, double velocidadeVertical, double pressao, long timestampUnix) {
+        double deltaTempo = 0;
+        if (ultimoTimestamp != 0) {
+            deltaTempo = (timestampUnix - ultimoTimestamp) / 1000.0;
+        }
+        ultimoTimestamp = timestampUnix;
+
+        switch (estado) {
+            case SUBIDA:
+                if (velocidadeVertical <= 0) { 
+                    estado = APOGEU;
+                    tempoNoApogeu = 0;
+                }
+                break;
+
+            case APOGEU:
+                tempoNoApogeu += deltaTempo;
+                if (velocidadeVertical < -0.5 && tempoNoApogeu > TEMPO_MIN_APOGEU) {
+                    estado = QUEDA_LIVRE;
+                }
+                break;
+
+            case QUEDA_LIVRE:
+                if (velocidadeVertical < LIMITE_VELOCIDADE_DESCIDA && 
+                    (altura <= ALTURA_ABERTURA_PARAQUEDAS || pressao >= PRESSAO_ABERTURA_PARAQUEDAS)) {
+                    estado = ACIONA_PARAQUEDAS;
+                }
+                break;
+
+            case ACIONA_PARAQUEDAS:
+                estado = DESCIDA_SEGURA;
+                break;
+
+            case DESCIDA_SEGURA:
+                break;
+        }
+
+        alturaAnterior = altura;
+        return static_cast<int>(estado);
+    }
+};
 
 void payloadHandler(const std::vector<double>& payload) {
 
@@ -174,10 +238,13 @@ void payloadHandler(const std::vector<double>& payload) {
     auto publisher = getPublisher();
     
     uNavINS ins;
+    ControleParaquedas controle;
 
     ins.update(time, vel_x, vel_y, vel_z, lat*PI/180.0f, lon*PI/180.0f, alt, gyro_y, -1*gyro_x, gyro_z, accel_y, -1*accel_x, accel_z, mag_x, mag_y, mag_z);
     // std::cout << "Estimated position: " << ins.getLatitude_rad() << ", " << ins.getLongitude_rad() << ", " << ins.getAltitude_m() << std::endl;
     // std::cout << "Attitude: " << ins.getRoll_rad()*180/PI << ", " << ins.getPitch_rad()*180/PI << ", " << ins.getHeading_rad()*180/PI << ", " << std::endl;
+
+    int estado = controle.atualizar(ins.getAltitude_m(), ins.getVelDown_ms(), pressure, time);
 
     CompactPayload compactData{
         static_cast<float>(time),
@@ -191,9 +258,10 @@ void payloadHandler(const std::vector<double>& payload) {
         static_cast<float>(ins.getPitch_rad()*180/PI),
         static_cast<float>(ins.getRoll_rad()*180/PI),
         static_cast<float>(pressure),
-        static_cast<float>(pressure)
+        static_cast<float>(estado)
     };
 
     publisher->publishBinary(reinterpret_cast<const uint8_t*>(&compactData), sizeof(CompactPayload));
 
 };
+

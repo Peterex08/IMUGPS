@@ -1,7 +1,7 @@
 CMakeFiles/sensor_monitoring.dir/src/uNavINS.cpp.o: \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/src/uNavINS.cpp \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/src/uNavINS.cpp \
  /usr/include/stdc-predef.h \
- /home/manga/Documents/EPTA\ PROJECT/IMUGPSBAR/include/uNavINS.h \
+ /home/manga/Documents/IMUGPS/IMUGPSBAR/include/uNavINS.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
