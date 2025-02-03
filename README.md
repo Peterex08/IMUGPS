@@ -1,5 +1,5 @@
 # IMUGPS
-A project that uses data from IMU, GPS and Barometer modules to estimate position, velocity, attitude and a rocket parachute behavior based on space state filters implementation using a Extended Kalman Filter Algorithm.
+A project that uses data from IMU, GPS and Barometer modules to estimate position, velocity, attitude and a rocket parachute behavior based on space state filters implementation using an Extended Kalman Filter Algorithm.
 
 ## How to install everything?
 To use the application you will need multiple stuff, including from android apps to c++, python and javascript libs.
