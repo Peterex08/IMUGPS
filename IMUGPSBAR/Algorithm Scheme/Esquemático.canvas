@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"ccbcc25fb8b45d7c","type":"text","text":"IMU (sensor read)\nAcc: [x, y, z] m/s²\nGyro: [x, y, z] rad/s\nMag: [x, y, z] \nBar: press\nGPS (module read)\nLat: [value] rad\nLon: [value] rad\nAlt:  [value] m\nVel: [velN, velE, velD]\ntime: [timestamp] nS (Unix epoch time)","x":-440,"y":-184,"width":340,"height":304},
+		{"id":"bcdc8781faa19ba4","type":"text","text":"Filtro de Mahony (AHRS lib)\n![[Pasted image 20241130134148.png]]\n![[Pasted image 20241130134212.png]]\n\nO filtro usa um modelo simples de dinâmica para estimar a atitude. Ele integra as medições do IMU ao longo do tempo, para atualizar a orientação estimada. (Filtro com Realimentação)\n\nEle responde com a estimação de atitude em Quaternions!\n![[Pasted image 20241130134814.png]]\n\nOutput: q = [w, x, y, z]","x":180,"y":-880,"width":480,"height":726},
+		{"id":"9c7f21abeca8ffc5","type":"text","text":"Direction Cosine Matrix\n(Matriz de Rotação)\n\ndcm=\n![[Pasted image 20241130135147.png]]\n\ninvdcm = dcm^-1 ou dcm^T \nNED = invdcm @ Acc ","x":840,"y":-154,"width":460,"height":300},
+		{"id":"eb539d0eeccec324","type":"text","text":"Convert Quaternions to Roll, Pitch e Yaw\n\n```\nyaw = atan2(2.0*(q.y*q.z + q.w*q.x), q.w*q.w - q.x*q.x - q.y*q.y + q.z*q.z);\npitch = asin(-2.0*(q.x*q.z - q.w*q.y));\nroll = atan2(2.0*(q.x*q.y + q.w*q.z), q.w*q.w + q.x*q.x - q.y*q.y - q.z*q.z);\n```\n\nÉ importante para saber a rotação do foguete, onde está apontando e tudo mais.\nrpy = [roll, pitch, yaw] rad","x":1000,"y":-480,"width":720,"height":260},
+		{"id":"9f87d7b855ebc1d9","type":"text","text":"ESP32","x":-760,"y":-44,"width":138,"height":60},
+		{"id":"dfc4d7a0d1f27c7a","type":"text","text":"Filtro de Kalman (GNSS + IMU) \n\nUsa equações do movimento para descrever a trajetória:\n![[Pasted image 20250202221516.png]]\n\nE com o cálculo da covariância dos sensores previamente antes do lançamento do foguete, se faz possível estimar e eliminar o erro.\n\nAssim temos a equação de extrapolação de estado:\n![[Pasted image 20250202222049.png]]\n\nQue permite estimar (extrapolar) resultados quando ausentes, baseados na covariância imputada\n\nA covariância calculada é usada no GANHO DE KALMAN, que é utilizada justamente para filtrar a interação e peso de cada sensor na medição da propriedade física.\n\nA covariância também é iterada com o tempo!\n\nFrequência de GPS e IMU são muito diferentes. (Estima o estado usando acc até que [GPS] seja atualizado.)\n\nEnquanto isso, IMU atualiza muito rápido, e vai mudando a posição, até que GPS venha e conserte o erro do IMU em dt.\n\n![[Pasted image 20241130142100.png]]\nOutput: [lat, lon, alt, velN, velE, velD]\n","x":1640,"y":-200,"width":1200,"height":1380}
+	],
+	"edges":[
+		{"id":"b4e45ef6dc7074d8","fromNode":"9f87d7b855ebc1d9","fromSide":"right","toNode":"ccbcc25fb8b45d7c","toSide":"left","label":"data"},
+		{"id":"d2e9caa997c424e2","fromNode":"ccbcc25fb8b45d7c","fromSide":"right","toNode":"bcdc8781faa19ba4","toSide":"left","label":"[Acc, Gyro, Mag]"},
+		{"id":"66eef6ba0cc35537","fromNode":"bcdc8781faa19ba4","fromSide":"right","toNode":"9c7f21abeca8ffc5","toSide":"left","label":"[w, x, y, z]"},
+		{"id":"c77759399f2d1fb2","fromNode":"ccbcc25fb8b45d7c","fromSide":"right","toNode":"9c7f21abeca8ffc5","toSide":"left","label":"Acc\n\n"},
+		{"id":"913ae4719617f715","fromNode":"9c7f21abeca8ffc5","fromSide":"right","toNode":"dfc4d7a0d1f27c7a","toSide":"left","label":"NED = [AccN, AccE, AccD] m/s²"},
+		{"id":"58209c72e30c5a4c","fromNode":"bcdc8781faa19ba4","fromSide":"right","toNode":"eb539d0eeccec324","toSide":"left","label":"[w, x, y, z]"},
+		{"id":"549c466b68446dde","fromNode":"ccbcc25fb8b45d7c","fromSide":"right","toNode":"dfc4d7a0d1f27c7a","toSide":"left","label":"[lat, lon, alt, velN, velE, velD, press, time]"}
+	]
+}
